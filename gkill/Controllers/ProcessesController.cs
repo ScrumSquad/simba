@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using GKill.Models;
 
 namespace GKill.Controllers
 {
@@ -17,7 +18,7 @@ namespace GKill.Controllers
                 name = string.Empty;
             }
 
-            var runningProcesses = Process.GetProcesses();
+            var runningProcesses = ProcessModel.GetProcesses();
             var processesViews = runningProcesses.Select(p => new ProcessViewModel
                     {
                         Name = p.ProcessName.ToUpper(),
