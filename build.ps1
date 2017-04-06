@@ -1,1 +1,1 @@
-dotnet .\gkill_web.dll
+Start-Process dotnet .\gkill_web.dll
