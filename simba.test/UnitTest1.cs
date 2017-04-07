@@ -12,5 +12,10 @@ namespace simba.test
             var runningProccesses = ProcessModel.GetProcesses();
             Assert.NotEmpty(runningProccesses);
         }
+
+        [Fact]
+        public void FailingTest(){
+            Assert.False(true);
+        }
     }
 }
