@@ -1,0 +1,35 @@
+@model IEnumerable<GKill.ViewModels.ProcessViewModel>
+@using (Html.BeginForm("Index", "Processes", FormMethod.Get))
+{
+    <div class="form-group">
+        <label class="control-label">
+            Name
+        </label>
+        <input type="text" name="name" id="name" />
+    </div>
+    <button class="btn btn-primary" type="submit">Filter!</button>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th colspan="2">Processes</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    @foreach (var proccess in Model)
+    {
+        <tr>
+            <td>
+                @proccess.Id
+            </td>
+            <td>
+                @proccess.Name
+            </td>
+        </tr>
+    }
+</table>
+

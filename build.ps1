@@ -1,1 +1,0 @@
-Start-Process dotnet .\gkill_web.dll
