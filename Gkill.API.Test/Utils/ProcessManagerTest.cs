@@ -9,6 +9,11 @@ namespace Gkill.API.Test.Utils{
             var runningProcesses = Gkill.API.Utils.ProccessManager.All();
             Assert.NotEmpty(runningProcesses);
         }
+        
+        [Fact]
+        public void FailingTest(){
+            Assert.Equal(1, 20);
+        }
 
         [Theory]
         [InlineData(-1)]
