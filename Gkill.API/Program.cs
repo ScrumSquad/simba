@@ -18,7 +18,6 @@ namespace Gkill.API
                 .UseIISIntegration()
                 .UseUrls("http://0.0.0.0:5000")
                 .UseStartup<Startup>()
-            
                 .Build();
 
             host.Run();
