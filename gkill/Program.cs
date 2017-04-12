@@ -16,6 +16,7 @@ namespace gkill_web
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:5000")
                 .Build();
 
             host.Run();

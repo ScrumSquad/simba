@@ -76,3 +76,9 @@ _[Ss]cripts
 *.dot[Cc]over
 
 *.org
+
+node_modules/
+jspm_packages/
+elm-stuff/
+tests/elm-stuff/
+.npm
