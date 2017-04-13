@@ -13,7 +13,6 @@ namespace Gkill.API.Test.Utils{
         [Theory]
         [InlineData(-1)]
         [InlineData(-10)]
-        [InlineData(1000)]
         public void ReturnsProcessNotRunningForNonExistentId(int processId){
             int result = Gkill.API.Utils.ProccessManager.KillProcess(processId);
             Assert.Equal(Gkill.API.Utils.ProccessManager.PROCESS_NOT_RUNNING, result);
